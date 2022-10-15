@@ -1,0 +1,16 @@
+digraph {
+	intercept [label="intercept
+~
+Normal" shape=ellipse]
+	eps [label="eps
+~
+HalfNormal" shape=ellipse]
+	subgraph cluster158 {
+		log_weight [label="log_weight
+~
+Normal" shape=ellipse style=filled]
+		label=158 labeljust=r labelloc=b style=rounded
+	}
+	intercept -> log_weight
+	eps -> log_weight
+}
